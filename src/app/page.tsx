@@ -1,11 +1,11 @@
-import BlogList from "./components/BlogList";
+import { useEffect } from "react";
 
 export default function Home() {
 
-  
-  return (
-    <>
-      <BlogList />
-    </>
-  );
+      useEffect(() => {
+    window.location.href = '/home';
+  }, []);
+
+  return null;
+
 }
